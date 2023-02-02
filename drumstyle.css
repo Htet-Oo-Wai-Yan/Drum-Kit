@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    /* background: #000; */
+    background-image: url(./img/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    position: absolute;
+}
+
+.keys{
+    display: flex;
+}
+
+.key-btn{
+    width: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 5px solid rgba(255, 0, 0, 0.3);
+
+    padding: 10px;
+    margin: 10px;
+    
+    position: relative;
+    transition: all .07s;
+}
+
+.key-btn:active{
+    transform: translateY(5px);
+}
+
+.key-playing{
+    transform: scale(1.1);
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.key-name{
+    font-size: 3rem;
+    font-weight: 900;
+    color: yellow;
+    font-family: 'Quantico', sans-serif;
+
+    display: block;
+}
+
+.key-type{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+
+    margin: 5px 0;
+    padding: 5px 0;
+}
